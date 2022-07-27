@@ -1,1 +1,1 @@
-An example git repository for CS 2110.
+A Book object that holds a title and an author.
