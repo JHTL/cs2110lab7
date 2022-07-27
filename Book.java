@@ -2,21 +2,23 @@
 public class Book {
     String title;
     String author;
+    int year;
 
-    /** Create a new book with title b. */
-    public Book(String t, String a) {
+    /** Create a new book with title t, author a, and year y. */
+    public Book(String t, String a, int y) {
         title= t;
-        author = a;
+        author= a;
+        year=y;
     }
 
     /** Print this book. */
     public void printBook() {
-        System.out.println(title + " by " + author);
+        System.out.println(title + " by " + author + " (" + year + ")");
     }
 
     /** Some book examples. */
     public static void main(String[] args) {
-        Book b = new Book("A Clockwork Orange", "Anthony Burgess");
+        Book b = new Book("The Clockwork Orange", "Anthony Burgess", 1962);
         b.printBook();
     }
 }
